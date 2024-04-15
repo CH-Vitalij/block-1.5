@@ -43,8 +43,18 @@ var swiper = new Swiper(".brand__container", {
   },
 });
 
-var a1 = document.querySelector(".label");
+var a1 = document.querySelector(".content__read-more");
+var a2 = document.querySelector(".label");
+var a3 = document.querySelector(".label span");
+var a4 = a2.querySelector(".content__img");
 
-var ch = a1.addEventListener("change", function () {
-  
+a1.addEventListener("change", function () {
+  if (a1.checked) {
+    a4.src = "icons/icon_2.png";
+    a3.textContent = "Скрыть";
+    console.log(a4);
+  } else {
+    a4.src = "icons/icon_1.png";
+    a3.textContent = "Показать все";
+  }
 });
