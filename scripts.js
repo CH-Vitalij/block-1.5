@@ -52,7 +52,7 @@ a1.addEventListener("change", function () {
   if (a1.checked) {
     a4.src = "icons/icon_2.png";
     a3.textContent = "Скрыть";
-    console.log(a4);
+    // console.log(a4);
   } else {
     a4.src = "icons/icon_1.png";
     a3.textContent = "Показать все";
