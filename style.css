@@ -200,9 +200,9 @@ html {
   overflow-y: visible;
 }
 
-.content__label::after {
+/* .content__label::after {
   content: "Показать все";
-}
+} */
 
 .content__read-more:checked ~ .content__label::after {
   content: "Скрыть";
