@@ -175,6 +175,11 @@ html {
   display: none;
 }
 
+.content__read-more:checked ~ .collapse__row {
+  max-height: 100%;
+  overflow-y: visible;
+}
+
 .label {
   display: inline-block;
   font-family: "TT Lakes Medium", sans-serif;
@@ -192,9 +197,4 @@ html {
 
 .content__img {
   margin-right: 9px;
-}
-
-.content__read-more:checked ~ .collapse__row {
-  max-height: 100%;
-  overflow-y: visible;
 }
